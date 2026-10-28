@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    default: demo
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      timeout: 2s
+      connect-timeout: 2s
+app:
+  username: ${APP_USERNAME:demo}
+  password: ${APP_PASSWORD:demo-change-me}
+  region: ${AWS_REGION:us-east-1}
+  database: ${ATHENA_DATABASE:analytics}
+  workgroup: ${ATHENA_WORKGROUP:primary}
+  output: ${ATHENA_OUTPUT:s3://replace-me/query-results/}
+server:
+  error:
+    include-message: never
