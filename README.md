@@ -1,5 +1,11 @@
 # S3 Analytics Dashboard
 
+## Public interactive demo
+
+[Open S3 Analytics Lab](https://s3-analytics-lab-muhammad.zanydove8193.chatgpt.site)
+
+The public demo uses synthetic data and simulates queries and caching entirely in the browser. It does not contact Spring Boot, Redis or AWS. Its standalone source is in `demo/index.html`. The full backend and React project can be run locally with Docker Compose as described below.
+
 A learning project demonstrating a Spring Boot API, React dashboard, Redis result caching, and asynchronous Athena queries over partitioned S3 data.
 
 **Demo data is synthetic. This project has not been benchmarked against a multi-terabyte dataset and does not represent prior production work.**
